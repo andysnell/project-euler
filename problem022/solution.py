@@ -1,5 +1,4 @@
 import string
-import math
 
 
 def get_letter_values():
@@ -10,7 +9,7 @@ def get_letter_values():
 
 
 def get_names():
-    with open("files/p042_words.txt") as f:
+    with open("names.txt") as f:
         return [s[1:-1] for s in f.read().split(",")]
 
 
@@ -23,11 +22,12 @@ def get_name_value(name):
 
 
 letter_values = get_letter_values()
-counter = 0
+data = get_names()
+data.sort()
+total_sum = 0
 
-for x in get_names():
-    total = math.sqrt(8 * get_name_value(x) + 1)
-    if total.is_integer():
-        counter += 1
+for index, name in enumerate(data):
+    position = index + 1
+    total_sum += position * get_name_value(name)
 
-print(counter)
+print(total_sum)
