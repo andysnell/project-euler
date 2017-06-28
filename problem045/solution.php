@@ -1,5 +1,5 @@
 <?php
-
+$start = microtime(true);
 require __dir__ . "/../src/helpers.php";
 
 function getNextTriangularNumber()
@@ -27,14 +27,19 @@ $solutions = 0;
 $pentagonals = [];
 $hexagonals = [];
 
+
+// Note: using the series values as array keys and using isset() to check for 
+// the key existance is significantly (~10X) faster than adding the value to 
+// the array and using in_array() to search for the value.  The isset() 
+// function is a hash lookup and O(1), while in_array() is O(n)
 while($solutions < 3){
 	$t = getNextTriangularNumber();
-	$pentagonals[] = getNextPentagonalNumber();
-	$hexagonals[] = getNextHexagonalNumber();
-
-	if(in_array($t, $pentagonals) && in_array($t, $hexagonals)) {
+	$pentagonals[getNextPentagonalNumber()] = 1;
+	$hexagonals[getNextHexagonalNumber()] = 1;
+	if(isset($pentagonals[$t]) && isset($hexagonals[$t]) ) {
 		$solutions++;
 	}
 }
 
 solution($t);
+duration($start);

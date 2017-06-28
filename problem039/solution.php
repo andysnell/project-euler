@@ -1,5 +1,5 @@
 <?php
-
+$start = microtime(true);
 require __dir__ . "/../src/helpers.php";
 
 $triangles = [];
@@ -20,4 +20,5 @@ for($a = 1; $a < 1000; $a++) {
 
 $result = array_count_values($triangles);
 solution(array_search(max($result), $result));
+echo "Duration: ", microtime(true) - $start, PHP_EOL;
 
