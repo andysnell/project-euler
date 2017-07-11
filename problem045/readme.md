@@ -1,4 +1,4 @@
-# Triangular, pentagonal, and hexagonal
+# Triangular, Pentagonal, and Hexagonal
 
 [Problem Source](https://projecteuler.net/problem=45)
 

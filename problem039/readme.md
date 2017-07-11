@@ -1,4 +1,4 @@
-# Integer right triangles
+# Integer Right Triangles
 
 [Problem Source](https://projecteuler.net/problem=39)
 

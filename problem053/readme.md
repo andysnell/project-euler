@@ -1,6 +1,6 @@
-# Combinatoric selections
+# Combinatoric Selections
 
-[Problem Source](https://projecteuler.net/problem53)
+[Problem Source](https://projecteuler.net/problem=53)
 
 There are exactly ten ways of selecting three from five, 12345:
 

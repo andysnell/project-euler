@@ -1,4 +1,4 @@
-# Powerful Digit Sum
+# Powerful Digit Counts
 
 [Problem Source](https://projecteuler.net/problem=63)
 

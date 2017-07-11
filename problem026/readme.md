@@ -1,4 +1,4 @@
-# Reciprocal cycles
+# Reciprocal Cycles
 
 [Problem Source](https://projecteuler.net/problem=26)
 

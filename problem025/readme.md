@@ -1,4 +1,4 @@
-# 1000-digit Fibonacci number
+# 1000-Digit Fibonacci Number
 
 [Problem Source](https://projecteuler.net/problem=25)
 

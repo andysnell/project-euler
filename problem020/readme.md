@@ -1,4 +1,4 @@
-# Factorial digit sum
+# Factorial Digit Sum
 
 [Problem Source](https://projecteuler.net/problem=20)
 
